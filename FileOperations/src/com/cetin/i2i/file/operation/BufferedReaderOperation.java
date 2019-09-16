@@ -10,14 +10,8 @@ import java.io.InputStreamReader;
 
 import javax.swing.filechooser.FileSystemView;
 
-/**
-<<<<<<< HEAD
- * @author ali
-=======
- * @author mehmetali.cetin
->>>>>>> f94602ca0e729d166ab7b85265a02988f8d90b22
- *
- */
+/* @author ali
+*/
 
 public class BufferedReaderOperation {
 
