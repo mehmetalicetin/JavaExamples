@@ -125,3 +125,39 @@ Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/mehmet
 
 !ENTRY org.eclipse.egit.ui 4 0 2019-09-16 22:59:49.519
 !MESSAGE Can't connect to any repository: https://github.com/mehmetalicetin/FileDemo.git (https://github.com/mehmetalicetin/FileDemo.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2019-09-16 23:17:07.685
+!MESSAGE An exception occurred during push on URI https://github.com/mehmetalicetin/FileDemo.git: https://github.com/mehmetalicetin/FileDemo.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/mehmetalicetin/FileDemo.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:570)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:466)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1367)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:211)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2019-09-16 23:17:19.715
+!MESSAGE An exception occurred during push on URI https://github.com/mehmetalicetin/FileDemo.git: https://github.com/mehmetalicetin/FileDemo.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/mehmetalicetin/FileDemo.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:570)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:466)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1367)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:211)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2019-09-16 23:23:15.416
+!MESSAGE An exception occurred during push on URI https://github.com/mehmetalicetin/FileDemo.git: https://github.com/mehmetalicetin/FileDemo.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/mehmetalicetin/FileDemo.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:570)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:466)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1367)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:211)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
