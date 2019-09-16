@@ -1,0 +1,105 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aom="http://www.i2i.com/fcbs/soa/schemas/AOMWS"><soapenv:Header/><soapenv:Body><aom:PacketChangeOrder>
+         <pReqInfo>
+            <ACTION_REASON_CODE>REAL_SALE</ACTION_REASON_CODE>
+            <ACTION_DATE>2019/06/03-00:00:00</ACTION_DATE>
+            <TRANSACTION_ID>27827</TRANSACTION_ID>
+            <CUSTOMER_ID>23123190</CUSTOMER_ID>
+            <USER_NAME>kc</USER_NAME>
+            <SIMULATION_FLAG>Y</SIMULATION_FLAG>
+            <MODIFY_INFO>
+               <CREATE_INFO>
+                  <CREATE_DATE>2019/06/03-00:00:00</CREATE_DATE>
+                  <CREATE_USER>kc</CREATE_USER>
+               </CREATE_INFO>
+            </MODIFY_INFO>
+         </pReqInfo>
+         <pChangeOrder>
+            <CHANGE_ORDER_ID>29627</CHANGE_ORDER_ID>
+            <ACTIVATED_ORDERS>
+               <SALES_ORDER_ITEM_ID>85747</SALES_ORDER_ITEM_ID>
+               <ACTION_DATE>2019/06/03-00:00:00</ACTION_DATE>
+               <CUSTOMER_ACCOUNT_KEY>
+                  <CUSTOMER_ACCOUNT_ID>12659</CUSTOMER_ACCOUNT_ID>
+               </CUSTOMER_ACCOUNT_KEY>
+               <PRODUCT>
+                  <PRODUCT_KEY>
+                     <PRODUCT_ID>386892123</PRODUCT_ID>
+                  </PRODUCT_KEY>
+                  <TRANSFERRED_PRODUCT_KEY>
+                     <PRODUCT_ID>102312319010</PRODUCT_ID>
+                  </TRANSFERRED_PRODUCT_KEY>
+                  <PRODUCT_DEFINITION>
+                     <PRODUCT_NAME>Helix Fi Gateway</PRODUCT_NAME>
+                     <PARENT_PRODUCT_ID>38695</PARENT_PRODUCT_ID>
+                     <PRODUCT_STATUS>A</PRODUCT_STATUS>
+                     <PRODUCT_NUMBER>NR-38689</PRODUCT_NUMBER>
+                     <PRODUCT_SERIAL_NUMBER>SN-38689</PRODUCT_SERIAL_NUMBER>
+                     <LANGUAGE>
+                        <LANG_CODE>fr_CA</LANG_CODE>
+                        <NAME>PRODUCT_NAME</NAME>
+                        <VALUE>Borne Helix Fi</VALUE>
+                     </LANGUAGE>
+                     <LANGUAGE>
+                        <LANG_CODE>fr_CA</LANG_CODE>
+                        <NAME>DESCRIPTION</NAME>
+                        <VALUE>Borne Helix Fi</VALUE>
+                     </LANGUAGE>
+                     <LANGUAGE>
+                        <LANG_CODE>en_CA</LANG_CODE>
+                        <NAME>PRODUCT_NAME</NAME>
+                        <VALUE>Helix Fi Gateway</VALUE>
+                     </LANGUAGE>
+                     <LANGUAGE>
+                        <LANG_CODE>en_CA</LANG_CODE>
+                        <NAME>DESCRIPTION</NAME>
+                        <VALUE>Helix Fi Gateway</VALUE>
+                     </LANGUAGE>
+                  </PRODUCT_DEFINITION>
+                  <PRODUCT_PRICE_INFO>
+                     <PRODUCT_PRICE_NAME>XB6 36 Months Installment Tariff</PRODUCT_PRICE_NAME>
+                     <PRODUCT_PRICE_DESCR>XB6 36 Months Installment Tariff</PRODUCT_PRICE_DESCR>
+                     <UOM_TYPE_ID>1</UOM_TYPE_ID>
+                     <TARIFF_ID>100031</TARIFF_ID>
+                     <INSTALLMENT_PLAN>
+                        <INSTALLMENT_PLAN_NAME>36 Months</INSTALLMENT_PLAN_NAME>
+                        <PERIOD_START_CNT>1</PERIOD_START_CNT>
+                        <PERIOD_END_CNT>24</PERIOD_END_CNT>
+                        <PERIOD_LENGTH>1</PERIOD_LENGTH>
+                     </INSTALLMENT_PLAN>
+                  </PRODUCT_PRICE_INFO>
+                  <PRODUCT_CHAR_VALUE>
+                     <PRODUCT_CHAR_VALUE_NAME>isEquipment</PRODUCT_CHAR_VALUE_NAME>
+                     <PRODUCT_CHAR_VALUE>1</PRODUCT_CHAR_VALUE>
+                     <BILLING_INDICATOR>1</BILLING_INDICATOR>
+                     <RESOURCE_INDICATOR>0</RESOURCE_INDICATOR>
+                     <PROVISIONING_INDICATOR>0</PROVISIONING_INDICATOR>
+                  </PRODUCT_CHAR_VALUE>
+               </PRODUCT>
+               <OFFER>
+                  <PRODUCT_OFFER_KEY>
+                     <PRODUCT_OFFER_ID>100031</PRODUCT_OFFER_ID>
+                  </PRODUCT_OFFER_KEY>
+                  <PRODUCT_OFFER_DEFINITION>
+                     <PRODUCT_OFFER_CODE>100031_XB6EIPO</PRODUCT_OFFER_CODE>
+                     <OFFER_NAME>Helix Fi Gateway</OFFER_NAME>
+                     <OFFER_STATUS>A</OFFER_STATUS>
+                     <IS_BUNDLE>0</IS_BUNDLE>
+                     <OFFER_TYPE>POFFR</OFFER_TYPE>
+                  </PRODUCT_OFFER_DEFINITION>
+               </OFFER>
+               <BILLING_INFO>
+                  <BILLING_ACCOUNT_KEY>
+                     <BILLING_ACCOUNT_ID>99023123190</BILLING_ACCOUNT_ID>
+                  </BILLING_ACCOUNT_KEY>
+               </BILLING_INFO>
+            </ACTIVATED_ORDERS>
+            <DEACTIVATED_ORDERS>
+               <DEACTIVATION_ORDER_ITEM_ID>102312319010</DEACTIVATION_ORDER_ITEM_ID>
+               <ACTION_DATE>2019/06/03-00:00:00</ACTION_DATE>
+               <PRODUCT_KEY>
+                  <PRODUCT_ID>102312319010</PRODUCT_ID>
+               </PRODUCT_KEY>
+			   <REASON_CODE>WRNTY_WAIT</REASON_CODE>
+            </DEACTIVATED_ORDERS>
+         </pChangeOrder>
+      </aom:PacketChangeOrder></soapenv:Body></soapenv:Envelope>
