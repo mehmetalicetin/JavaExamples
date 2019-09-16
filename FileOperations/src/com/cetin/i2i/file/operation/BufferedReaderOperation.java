@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 import javax.swing.filechooser.FileSystemView;
 
 /**
- * @author mehmetali.cetin
+ * @author cetin
  *
  */
 
