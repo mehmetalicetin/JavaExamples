@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 
 import javax.swing.filechooser.FileSystemView;
 
-/* @author mehmetalicetin
+/* @author mehmetalicetin99
 */
 
 public class BufferedReaderOperation {
