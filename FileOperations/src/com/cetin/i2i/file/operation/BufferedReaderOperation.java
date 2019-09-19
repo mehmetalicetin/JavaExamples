@@ -13,6 +13,7 @@ import javax.swing.filechooser.FileSystemView;
 public class BufferedReaderOperation {
 
   public static final String STOP = "STOP";
+  public static final char   C_STOP='q';
 
   public static void extractedReadLineString() {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -39,7 +40,7 @@ public class BufferedReaderOperation {
       do {
         c = (char) bufferedReader.read();
         System.out.println(c);
-      } while (c != 'q');
+      } while (c != C_STOP);
 
     } catch (IOException e) {
       // TODO: handle exception
