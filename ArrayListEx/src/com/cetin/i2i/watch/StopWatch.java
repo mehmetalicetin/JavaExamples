@@ -6,7 +6,7 @@ package com.cetin.i2i.watch;
 /**
  * A class to measure time elapsed.
  * 
- * @author 7767
+ * @author mehmetali.cetin
  *
  */
 public class StopWatch {
