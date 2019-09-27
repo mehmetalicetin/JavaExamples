@@ -1,1 +1,7 @@
 /.metadata/
+/bin/
+*.classpath
+*.settings
+*.project
+./*.log
+.gitignore
