@@ -32,6 +32,10 @@ public class FileUnder {
 		children = startingDirectory.listFiles(); // get all files under startingDirectory
 	}
 
+	/**
+	 * This method is found all file under src_path with end of the related extension.
+	 * @param extension
+	 */
 	public static void find(String extension) {
 		for (File child : children) {
 			String filePath = child.toString();
