@@ -18,7 +18,7 @@ public class Ex1 {
 		//a.staticMethod();
 		//a.nonStaticMethod();
 		
-		//System.out.println("Am i null :"+a.isNull());
+		System.out.println("Am i null :"+a.isNull());
 		
 		checkNull();
 
