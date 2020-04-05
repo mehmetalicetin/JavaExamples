@@ -1,4 +1,4 @@
 package com.cetin.array.operations;
 
-public class Division {
+public class Division extends Operation {
 }

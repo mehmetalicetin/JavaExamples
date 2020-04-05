@@ -1,4 +1,4 @@
 package com.cetin.array.operations;
 
-public class Subcraption {
+public class Subcraption extends Operation {
 }
