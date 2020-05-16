@@ -2,10 +2,10 @@ package com.cetin.array.operations;
 
 public class Addition extends Operation{
     private Double result = 0.0;
-    Double[] numbers;
+    Object[] numbers;
 
     @Override
-    protected void setNumbers(Double... numbers) throws Exception {
+    protected void setNumbers(Object... numbers) throws Exception {
         super.setNumbers(numbers);
         for (int i =0 ;i< numbers.length; i++){
             if(numbers[i] == null) numbers[i] = 0.0;
@@ -20,13 +20,13 @@ public class Addition extends Operation{
 
     @Override
     protected void calculateOperation() {
-        for (Double number: getNumbers()) {
-            result += number;
+        for (Object number: getNumbers()) {
+            result += (double)number;
         }
     }
 
     @Override
-    protected Double[] getNumbers() {
+    protected Object[] getNumbers() {
          return this.numbers;
     }
 
