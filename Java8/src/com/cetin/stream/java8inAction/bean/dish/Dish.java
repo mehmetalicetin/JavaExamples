@@ -1,4 +1,4 @@
-package com.cetin.stream.java8inAction.bean;
+package com.cetin.stream.java8inAction.bean.dish;
 
 public class Dish {
     private final String name;
@@ -35,4 +35,6 @@ public class Dish {
     }
 
     public enum Type{MEAT,FISH,OTHER}
+
+    public enum CaloricLevel{ DIET, NORMAL, FAT }
 }

@@ -1,4 +1,4 @@
-package com.cetin.stream.java8inAction.bean;
+package com.cetin.stream.java8inAction.bean.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
