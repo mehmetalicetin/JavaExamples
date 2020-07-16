@@ -3,13 +3,13 @@ package com.cetin.stream.java8inAction.bean.dish;
 public class Dish {
     private final String name;
     private final boolean vegetarian;
-    private final int colories;
+    private final int calories;
     private final Type type;
 
-    public Dish(String name, boolean vegetarian, int colories, Type type) {
+    public Dish(String name, boolean vegetarian, int calories, Type type) {
         this.name = name;
         this.vegetarian = vegetarian;
-        this.colories = colories;
+        this.calories = calories;
         this.type = type;
     }
 
@@ -21,8 +21,8 @@ public class Dish {
         return vegetarian;
     }
 
-    public int getColories() {
-        return colories;
+    public int getCalories() {
+        return calories;
     }
 
     public Type getType() {

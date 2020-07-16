@@ -34,14 +34,14 @@ public class TestMain {
 
     private static void caloricLevelByType(List<Dish> menu) {
         Map<Dish.Type, Set<Dish.CaloricLevel>> caloricLevelsByType = menu.stream().collect(groupingBy(Dish::getType, mapping(dish -> {
-            if (dish.getColories() < 400) return Dish.CaloricLevel.DIET;
-            else if (dish.getColories() < 700) return Dish.CaloricLevel.NORMAL;
+            if (dish.getCalories() < 400) return Dish.CaloricLevel.DIET;
+            else if (dish.getCalories() < 700) return Dish.CaloricLevel.NORMAL;
             else return Dish.CaloricLevel.FAT;
         }, toSet())));
 
         Map<Dish.Type, Set<Dish.CaloricLevel>> caloricLevelsByType2 = menu.stream().collect(groupingBy(Dish::getType, mapping(dish -> {
-            if (dish.getColories() < 400) return Dish.CaloricLevel.DIET;
-            else if (dish.getColories() < 700) return Dish.CaloricLevel.NORMAL;
+            if (dish.getCalories() < 400) return Dish.CaloricLevel.DIET;
+            else if (dish.getCalories() < 700) return Dish.CaloricLevel.NORMAL;
             else return Dish.CaloricLevel.FAT;
         }, toCollection(HashSet::new))));
 
@@ -53,13 +53,13 @@ public class TestMain {
     private static void totalCaloriesByDishesType(List<Dish> menu) {
         Map<Dish.Type, Integer> totalCaloriesByType =
                 menu.stream().collect(groupingBy(Dish::getType,
-                        summingInt(Dish::getColories)));
+                        summingInt(Dish::getCalories)));
         totalCaloriesByType.forEach((key,value) -> System.out.println("Dish Type:"+key+"     Total Calorie:"+value));
     }
 
     private static void mostCaloricType(List<Dish> menu) {
         Map<Dish.Type, Optional<Dish>> mostCaloricByType = menu.stream()
-                .collect(groupingBy(Dish::getType, Collectors.maxBy(Comparator.comparingInt(Dish::getColories))));
+                .collect(groupingBy(Dish::getType, Collectors.maxBy(Comparator.comparingInt(Dish::getCalories))));
         mostCaloricByType.forEach((key,value)->{
             System.out.println("Dish Type:"+key+"   Max Caloric Dish:"+value.get());
         });
@@ -74,9 +74,9 @@ public class TestMain {
         Map<Dish.Type, Map<Dish.CaloricLevel,List<Dish>>> dishesByTypeOfCaloricLevel = menu.stream().collect(
                 groupingBy(Dish::getType, groupingBy(
                         dishes -> {
-                            if (dishes.getColories() < 400)
+                            if (dishes.getCalories() < 400)
                                 return Dish.CaloricLevel.DIET;
-                            else if (dishes.getColories() < 700) {
+                            else if (dishes.getCalories() < 700) {
                                 return Dish.CaloricLevel.NORMAL;
                             } else {
                                 return Dish.CaloricLevel.FAT;
@@ -97,13 +97,13 @@ public class TestMain {
 
     private static void groupingProcess(List<Dish> menu) {
         Map<Dish.CaloricLevel, List<Dish>> dishesByCaloricLevel = menu.stream().collect(groupingBy(dishes -> {
-            if (dishes.getColories() < 400)
+            if (dishes.getCalories() < 400)
                 return Dish.CaloricLevel.DIET;
-            else if (dishes.getColories() < 700) {
+            else if (dishes.getCalories() < 700)
                 return Dish.CaloricLevel.NORMAL;
-            } else {
+             else
                 return Dish.CaloricLevel.FAT;
-            }
+
         }));
 
         dishesByCaloricLevel.forEach((k,v) -> {
