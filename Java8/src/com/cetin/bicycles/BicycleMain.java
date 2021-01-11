@@ -6,6 +6,21 @@ import java.util.Optional;
 
 public class BicycleMain {
     public static void main(String[] args) {
+
+        BicycleWithEnginee bicycleWithEnginee = BicycleWithEnginee.getInstance();
+
+        BicycleWithEnginee bicycleWithEnginee1 = BicycleWithEnginee.getInstance();
+
+        bicycleWithEnginee.setCounter(1);
+
+        bicycleWithEnginee.increament();
+        bicycleWithEnginee1.increament();
+        bicycleWithEnginee1.increament();
+
+        System.out.println("deger:" + bicycleWithEnginee.getCounter());
+    }
+        /*
+
         List<String> bikeBrands = Arrays.asList("Giant", "Scott", "Trek", "GT");
         Bicycle[] bicycles = bikeBrands.stream().map(Bicycle::new).toArray(Bicycle[]::new);
         Optional<Bicycle> bicycle = bikeBrands.stream().map(Bicycle::new).findFirst();
@@ -24,7 +39,7 @@ public class BicycleMain {
         for (int i =0; i<bicycles.length ; i++){
             System.out.println(bicycles[i].getBrand());
         }
-    }
+    }*/
 }
 
 class Bicycle {
