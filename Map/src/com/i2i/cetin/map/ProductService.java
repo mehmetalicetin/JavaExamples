@@ -39,6 +39,19 @@ public class ProductService {
         if(sss.contains(aaa)){
             System.out.println("MEhmet Ali");
         }
+
+        Map<Long,String> stringMap = new HashMap<>();
+        stringMap.put(1l,"aa");
+
+        stringMap.putAll(getMap());
+
+        System.out.println(stringMap.values());
+    }
+
+    private static Map<Long, String> getMap() {
+        Map<Long,String> stringMap = new HashMap<>();
+        stringMap.put(2l,"bb");
+        return stringMap;
     }
 
 
