@@ -10,11 +10,11 @@ package com.cetin.i2i.constant;
  */
 public interface IArrayConstant {
 
-  public static class ErrorFaultCode{
+  class ErrorFaultCode{
 	public static final  int LENGTH_FAULT_CODE=1;
   }
 	
-  public static class ErrorMessage{
+  class ErrorMessage{
 	 public static final String ARRAY_LENGTH_ERROR=" Doesn't exist any data in array ";
   }
 
