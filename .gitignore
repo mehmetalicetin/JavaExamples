@@ -6,3 +6,6 @@
 ./*.log
 .gitignore
 .iml
+.idea/jarRepositories.xml
+*.xml
+*.iml
