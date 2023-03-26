@@ -9,9 +9,9 @@ public class Constant {
         VAL =2;
     }
 
-    public static final int VAL_X;
+    /*public static final int VAL_X;
 
     public Constant() {
         VAL_X = 2;
-    }
+    }*/
 }
