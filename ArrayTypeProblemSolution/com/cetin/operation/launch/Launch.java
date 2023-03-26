@@ -1,12 +1,7 @@
 package com.cetin.operation.launch;
 
 import com.cetin.array.operations.Fetcher;
-import com.cetin.array.operations.OperationTypes;
-import com.cetin.com.cetin.operation.util.Utility;
 
-import java.time.DayOfWeek;
-import java.util.Calendar;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;

@@ -1,7 +1,5 @@
 package com.cetin.generic.methods;
 
-import com.cetin.generic.listbox.ListBox;
-
 import java.util.List;
 
 public class StringMethodBox<T extends List, U extends String> implements IMethodBox<T,U> {
