@@ -17,7 +17,7 @@ public class StringProducerMain {
         displaySettings(this::toString); //Method from superclass
     }
 
-    private void displaySettings(Producer producer) {
+    private void displaySettings(com.cetin.producer.Producer producer) {
         System.out.println(producer.produce());
     }
 }

@@ -1,6 +1,5 @@
 package com.cetin.numchecker;
 
-import java.util.Objects;
 import java.util.function.IntPredicate;
 
 public class NumChecker {

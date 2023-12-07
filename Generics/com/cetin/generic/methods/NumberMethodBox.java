@@ -1,10 +1,6 @@
 package com.cetin.generic.methods;
 
-import com.cetin.generic.listbox.ListBox;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class NumberMethodBox<T extends List,U extends Number> implements IMethodBox<T,U>{
     @Override
