@@ -1,0 +1,16 @@
+Java 9 Key Parts:
+
+
+Exciting things in java 9:
+- [ ] Improvements/changes
+- [ ] Additions
+- [ ] Advances
+
+
+Improvements/Changes
+- [ ] İnterface private methods,  you can define private methods, static methods and default methods.
+- [ ] Effectively final in try-with-resources
+- [ ] No _
+- [ ] Stream takeWhile, dropWhile
+- [ ] IntStream iterate
+- [ ] Without bounds

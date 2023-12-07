@@ -1,0 +1,13 @@
+Parallelism and Concurrency:
+• Concurrency is when multiple tasks can run in overlapping time periods (aynı gibi görünen ama aslında aynı olmayan.)
+• Parallelism is when multiple tasks run at literally the same time.
+
+
+A concurrent application is composed of independently executing processes.
+
+
+9.2 When Parallel Helps Problem
+You want to see a benefit from using parallel streams.
+
+Solution
+Use parallel streams under the right conditions.
